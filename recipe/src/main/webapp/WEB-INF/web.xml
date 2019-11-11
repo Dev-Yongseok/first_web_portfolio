@@ -4,4 +4,24 @@
 
 <web-app>
   <display-name>Archetype Created Web Application</display-name>
+  <servlet>
+  	<servlet-name>Action</servlet-name>
+  	<display-name>Action</display-name>
+  	<description></description>
+  	<servlet-class>com.recipe.controller.action.Action</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>RecipeServlet</servlet-name>
+  	<display-name>RecipeServlet</display-name>
+  	<description></description>
+  	<servlet-class>com.recipe.controller.RecipeServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>Action</servlet-name>
+  	<url-pattern>/Action</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>RecipeServlet</servlet-name>
+  	<url-pattern>/RecipeServlet</url-pattern>
+  </servlet-mapping>
 </web-app>
